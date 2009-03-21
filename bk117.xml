@@ -101,7 +101,7 @@
 
 
 <rotorgear
-  max-power-engine="820"
+  max-power-engine="800"
   max-power-rotor-brake="100"
   rotorgear-friction="1.4"
   engine-prop-factor="0.005"
@@ -143,7 +143,7 @@
   <stall aoa="16" width="4" peak="1.5"/>
 </vstab>
 
-<hstab x="-7.5" y="0.05" z="-0.64" taper="1.0" effectiveness="2.0" length="1.20" chord="0.36" sweep="0" incidence="22">
+<hstab x="-7.5" y="0.05" z="-0.64" taper="1.0" effectiveness="2.0" length="1.20" chord="0.36" sweep="0" incidence="45">
   <stall aoa="0" width="0" peak="1.5"/>
 </hstab>
 

@@ -161,9 +161,9 @@
 		<object-name>fake_axis</object-name>
 		<offset-deg>4.6</offset-deg>
 		<center>
-			<x-m>6.057</x-m>
+			<x-m>6.482</x-m>
 			<y-m>0</y-m>
-			<z-m>1.710</z-m>
+			<z-m>1.987</z-m>
 		</center>
 		<axis>
 			<x>0</x>
@@ -177,9 +177,9 @@
 		<object-name>rotor_disc_T</object-name>
 		<offset-deg>4.6</offset-deg>
 		<center>
-			<x-m>6.057</x-m>
+			<x-m>6.482</x-m>
 			<y-m>0</y-m>
-			<z-m>1.710</z-m>
+			<z-m>1.987</z-m>
 		</center>
 		<axis>
 			<x>0</x>
@@ -213,9 +213,9 @@
 		<object-name>rotor_disc_T</object-name>
 		<property>rotors/tail/blade[0]/position-deg</property>
 		<center>
-			<x-m>6.057</x-m>
+			<x-m>6.482</x-m>
 			<y-m>-0.232</y-m>
-			<z-m>1.710</z-m>
+			<z-m>1.987</z-m>
 		</center>
 		<axis>
 			<x>0</x>
@@ -253,9 +253,9 @@
 		<object-name>fake_axis</object-name>
 		<property>rotors/tail/blade[0]/position-deg</property>
 		<center>
-			<x-m>6.057</x-m>
+			<x-m>6.482</x-m>
 			<y-m>-0.232</y-m>
-			<z-m>1.710</z-m>
+			<z-m>1.987</z-m>
 		</center>
 		<axis>
 			<x>0</x>
@@ -269,9 +269,9 @@
 		<object-name>tailrotor_blade1</object-name>
 		<property>rotors/tail/blade[0]/incidence-deg</property>
 		<center>
-			<x-m>6.057</x-m>
+			<x-m>6.482</x-m>
 			<y-m>-0.410</y-m>
-			<z-m>1.710</z-m>
+			<z-m>1.987</z-m>
 		</center>
 		<axis>
 			<x>-1</x>
@@ -285,9 +285,9 @@
 		<object-name>tailrotor_blade2</object-name>
 		<property>rotors/tail/blade[1]/incidence-deg</property>
 		<center>
-			<x-m>6.057</x-m>
+			<x-m>6.482</x-m>
 			<y-m>-0.410</y-m>
-			<z-m>1.710</z-m>
+			<z-m>1.987</z-m>
 		</center>
 		<axis>
 			<x>1</x>
@@ -312,6 +312,7 @@
 
 	<animation>
 		<type>rotate</type>
+		<object-name>Plane.024</object-name>
 		<object-name>star_hub</object-name>
 		<object-name>star_cap1</object-name>
 		<object-name>star_cap2</object-name>

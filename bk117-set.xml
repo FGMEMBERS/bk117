@@ -101,7 +101,11 @@ EC 135 simulation config.
 			</bk117>
 		</model>
 		
-		
+<airport>
+        <runways>
+            <start-offset-m>3.3</start-offset-m>
+        </runways>
+</airport>		
 
 		<!--view-->
 		<view n="0">

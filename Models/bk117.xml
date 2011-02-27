@@ -11,6 +11,39 @@
 		<z-m>-0.3</z-m>
 		<pitch-deg>0.2</pitch-deg>
 	</offsets>
+	
+<!--shader-->
+<effect>
+		<inherits-from>Aircraft/bk117/Models/Effects/bk117reflect</inherits-from>
+		<object-name>fuselage</object-name>
+		<object-name>frontdoor_right</object-name>
+		<object-name>frontdoor_left</object-name>
+		<object-name>backdoor_right</object-name>
+		<object-name>backdoor_left</object-name>
+		<object-name>radom</object-name>
+		<object-name>wire_cutter</object-name>
+		<object-name>skid</object-name>
+		<object-name>skid_floats</object-name>
+		<object-name>sandfilter</object-name>
+		<object-name>reardoor_right</object-name>
+		<object-name>reardoor_left</object-name>
+		<object-name>reardoor_wind_right</object-name>
+		<object-name>reardoor_wind_left</object-name>
+		<object-name>radom</object-name>
+		<object-name>nose</object-name>
+</effect>
+
+<effect>
+		<inherits-from>Aircraft/bk117/Models/Effects/bk117reflectglas</inherits-from>
+		<object-name>frontdoorglas_left</object-name>
+		<object-name>frontdoorglas_right</object-name>
+		<object-name>window</object-name>
+		<object-name>backdoorglas_right</object-name>
+		<object-name>backdoorglas_left</object-name>
+		<object-name>rearwind_left</object-name>
+		<object-name>rearwind_right</object-name>	
+</effect>
+	
 <!--animation-->
 
 <params>
@@ -326,7 +359,7 @@
 		<object-name>rotoraxis</object-name>
 		<object-name>swashplate_rotor</object-name>
 		<object-name>swashplate_cap</object-name>
-		<offset-deg>-8.6</offset-deg>
+		<offset-deg>-5</offset-deg>
 		<axis>
 			<x>0</x>
 			<y>1</y>
@@ -386,7 +419,7 @@
 		<object-name>pendulum3</object-name>
 		<object-name>pendulum4</object-name>
 		<object-name>main_rotor_disc</object-name>
-		<offset-deg>-8.6</offset-deg>
+		<offset-deg>-5</offset-deg>
 		<axis>
 			<x>0</x>
 			<y>1</y>
@@ -1237,20 +1270,148 @@
 			<offset>1</offset>
 		</transparency>
 	</animation>
-
-<!--shader-->
+<!--select animation-->
 <animation>
-		<type>shader</type>
-		<shader>chrome</shader>
-		<texture>glass_shader.png</texture>
-		<object-name>glas</object-name>
-		<object-name>rightwindow</object-name>
-		<object-name>leftwindow</object-name>
-		<object-name>rearwindow</object-name>
-		<object-name>backwindow</object-name>
+		<type>select</type>
+		<object-name>reardoor_right</object-name>
+		<condition>
+			<property>sim/model/bk117/reardoor_right</property>
+		</condition>
 </animation>
-	
-<!--instruments-->
+
+<animation>
+		<type>select</type>
+		<object-name>reardoor_left</object-name>
+		<condition>
+			<property>sim/model/bk117/reardoor_left</property>
+		</condition>
+</animation>
+
+
+<animation>
+		<type>select</type>
+		<object-name>reardoor_wind_right</object-name>
+		<object-name>rearwind_right</object-name>
+		<condition>
+			<property>sim/model/bk117/reardoor_wind_right</property>
+		</condition>
+</animation>
+
+<animation>
+		<type>select</type>
+		<object-name>reardoor_wind_left</object-name>
+		<object-name>rearwind_left</object-name>
+		<condition>
+			<property>sim/model/bk117/reardoor_wind_left</property>
+		</condition>
+</animation>
+
+<animation>
+		<type>select</type>
+		<object-name>radom</object-name>
+		<condition>
+			<property>sim/model/bk117/radom</property>
+		</condition>
+</animation>
+
+<animation>
+		<type>select</type>
+		<object-name>wire_cutter</object-name>
+		<condition>
+			<property>sim/model/bk117/wire_cutter</property>
+		</condition>
+</animation>
+
+<animation>
+		<type>select</type>
+		<object-name>sandfilter</object-name>
+		<condition>
+			<property>sim/model/bk117/sandfilter</property>
+		</condition>
+</animation>
+
+<animation>
+		<type>select</type>
+		<object-name>skid</object-name>
+		<condition>
+			<property>sim/model/bk117/skid</property>
+		</condition>
+</animation>
+
+<animation>
+		<type>select</type>
+		<object-name>skid_floats</object-name>
+		<condition>
+			<property>sim/model/bk117/skid_floats</property>
+		</condition>
+</animation>
+
+<animation>
+		<type>select</type>
+		<object-name>whinch</object-name>
+		<condition>
+			<property>sim/model/bk117/whinch</property>
+		</condition>
+</animation>
+
+<animation>
+		<type>select</type>
+		<object-name>FLIR</object-name>
+		<condition>
+			<property>sim/model/bk117/FLIR</property>
+		</condition>
+</animation>
+
+<animation>
+		<type>select</type>
+		<object-name>searchlight_left</object-name>
+		<condition>
+			<property>sim/model/bk117/searchlight_left</property>
+		</condition>
+</animation>
+
+<animation>
+		<type>select</type>
+		<object-name>searchlight_front</object-name>
+		<condition>
+			<property>sim/model/bk117/searchlight_front</property>
+		</condition>
+</animation>
+
+<animation>
+		<type>select</type>
+		<object-name>snowboard</object-name>
+		<condition>
+			<property>sim/model/bk117/snowboard</property>
+		</condition>
+</animation>
+
+
+<!--material animation-->
+<animation>
+		<type>material</type>
+		<!--global type="bool">true</global-->
+		<object-name>fuselage</object-name>
+		<object-name>nose</object-name>
+		<object-name>reardoor_right</object-name>
+		<object-name>reardoor_left</object-name>
+		<object-name>frontdoor_right</object-name>
+		<object-name>frontdoor_left</object-name>
+		<object-name>backdoor_right</object-name>
+		<object-name>backdoor_light</object-name>
+		<object-name>reardoor_wind_left</object-name>
+		<object-name>reardoor_wind_right</object-name>
+		<object-name>radom</object-name>
+		<object-name>wire_cutter</object-name>
+		<object-name>sandfilter</object-name>
+		<object-name>skid</object-name>
+		<object-name>skid_floats</object-name>
+		<object-name>nacaintake</object-name>
+		<object-name>rotorheaddisc</object-name>
+		<property-base>sim/model/livery/</property-base>
+		<texture-prop>texture</texture-prop>
+		<texture>default.png</texture>
+</animation>
 
 
 </PropertyList>

@@ -34,72 +34,38 @@ EC 135 simulation config.
 
 		<model>
 			<path archive="y">Aircraft/bk117/Models/bk117.xml</path>
-			<!--<variant type="int">0</variant>
+			<variant type="int">0</variant>
 			<livery>
-                              <file type="string">Bavarian Police "Edelweiss"</file>
-            </livery>
-	   <liverytail>
-	    <file type="string">Bavarian Police "Edelweiss"</file>
-	    </liverytail>
+                              <file type="string">FlightGear</file>
+			<index type="int">1</index>
+                            </livery>
+	   
 	    <rotorblade>
-				<name type="string">Bavarian Police "Edelweiss"</name>
+				<name type="string">FlightGear"</name>
 					 <index type="int">1</index>
 					  <texture>rotorblade.png</texture>
-				</rotorblade>-->
+				</rotorblade>
 			<bk117>
-				<!--<state type="int">0</state>
-				<rotor-step-deg type="float">-1.0</rotor-step-deg>
-
 				<hide-gsdi>true</hide-gsdi>
-				<binocular_standart type="bool">true</binocular_standart>
-				<binocular_tri type="bool">false</binocular_tri>
+				<sandfilter type="bool">false</sandfilter>
+				<radom type="bool">false</radom>
 				<winch>false</winch>
-				<mirror>false</mirror>
-				<wirecutter_skid>false</wirecutter_skid>
-				<wirecutter_up>false</wirecutter_up>
-				<nose>false</nose>
-				<nosefl>true</nosefl>
-				<radardome>false</radardome>
-				<antennaset>true</antennaset>
-				<plateleft>false</plateleft>
-				<plateright>true</plateright>
-				<reardoorwindow>true</reardoorwindow>
-				<reardoor_norm>false</reardoor_norm>-->
-				
-				<doors>
-					<door>
-						<position-norm type="double">0.0</position-norm>
-						<name type="string">pilot's door</name>
-					</door>
-
-					<door>
-						<position-norm type="double">0.0</position-norm>
-						<name type="string">copilot's door</name>
-					</door>
-
-					<door>
-						<position-norm type="double">0.0</position-norm>
-						<name type="string">right backdoor</name>
-					</door>
-
-					<door>
-						<position-norm type="double">0.0</position-norm>
-						<name type="string">left backdoor</name>
-					</door>
-
-					<door>
-						<position-norm type="double">0.0</position-norm>
-						<name type="string">right reardoor</name>
-					</door>
-
-					<door>
-						<position-norm type="double">0.0</position-norm>
-						<name type="string">left reardoor</name>
-					</door>
-				</doors>
-				
+				<searchlight_front>false</searchlight_front>
+				<wirecutter>false</wirecutter>
+				<searchlight_left>false</searchlight_left>
+				<FLIR>false</FLIR>
+				<skid_floats>false</skid_floats>
+				<skid>true</skid>
+				<snowboard>false</snowboard>
+				<reardoor_right>true</reardoor_right>
+				<reardoor_left>true</reardoor_left>
+				<reardoor_wind_right>false</reardoor_wind_right>
+				<reardoor_wind_left>false</reardoor_wind_left>
 			</bk117>
 		</model>
+<rendering>
+    <refl_correction type="string">-0.1</refl_correction>
+    </rendering>
 		
 <airport>
         <runways>
@@ -113,9 +79,9 @@ EC 135 simulation config.
 			<type>lookfrom</type>
 			<internal type="bool">true</internal>
 			<config>
-                                        <x-offset-m type="double">0.41</x-offset-m><!--left-->
+                                        <x-offset-m type="double">0.43</x-offset-m><!--left-->
 				<y-offset-m type="double">0.37</y-offset-m><!--up-->
-				<z-offset-m type="double">0.47</z-offset-m><!--back-->
+				<z-offset-m type="double">0.86</z-offset-m><!--back-->
 				<pitch-offset-deg>-14</pitch-offset-deg>
 				<default-field-of-view-deg type="double">55.0</default-field-of-view-deg>
 			</config>
@@ -228,18 +194,17 @@ EC 135 simulation config.
 		<menubar>
 			<default>
 				 <menu n="10">
-      <label>BK117</label>
-      <enabled type="bool">true</enabled>
-      <item>
-        <label>Select Livery</label>
-        <binding>
-          <command>nasal</command>
-          <script>aircraft.livery.dialog.toggle()</script>
-        </binding>
-      </item>
-                                                 
-												     
-					<item>
+                                        <label>BK117</label>
+                                            <enabled type="bool">true</enabled>
+                                        <item>
+                                          <label>Select Livery</label>
+                                        <binding>
+                                          <command>nasal</command>
+                                          <script>aircraft.livery.dialog.toggle()</script>
+                                         </binding>
+                                         </item>
+				
+				<item>
 						<label>Show/hide GSDI</label>
 						<binding>
 							<command>property-toggle</command>
@@ -275,9 +240,9 @@ EC 135 simulation config.
 
 
 		<lighting>
-			<strobe type="bool">true</strobe>
-			<beacon type="bool">true</beacon>
-			<nav-lights type="bool">true</nav-lights>
+			<strobe type="bool">false</strobe>
+			<beacon type="bool">false</beacon>
+			<nav-lights type="bool">false</nav-lights>
 		</lighting>
 	</controls>
 

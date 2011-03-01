@@ -99,7 +99,7 @@ EXAMPLES: You can find examples of both usages in the Hunter and Lightning model
 		<fresneliness>0.0</fresneliness>
 		<noisiness>0.0</noisiness>
 		<refl_correction><use>/sim/rendering/refl_correction</use></refl_correction>
-		<ambient_correction>0.0</ambient_correction>
+		<ambient_correction>0.1</ambient_correction>
 		<reflect_map>1</reflect_map>
 	</parameters>
 

@@ -61,10 +61,19 @@ EC 135 simulation config.
 				<reardoor_left>true</reardoor_left>
 				<reardoor_wind_right>false</reardoor_wind_right>
 				<reardoor_wind_left>false</reardoor_wind_left>
+			<material>
+				<fuselage>
+						<specular>
+							<red>1.0</red>
+							<green>1.0</green>
+							<blue>1.0</blue>
+						</specular>
+				</fuselage>
+                              </material>
 			</bk117>
 		</model>
 <rendering>
-    <refl_correction type="string">-0.1</refl_correction>
+    <refl_correction type="string">-0.2</refl_correction>
     </rendering>
 		
 <airport>
@@ -439,7 +448,7 @@ EC 135 simulation config.
 
 	<nasal>
 		<bk117>
-			<file>Aircraft/bk117/Models/bk117.nas</file>
+			<file>Aircraft/bk117/Nasal/bk117.nas</file>
 			<!--<file>Aircraft/bk117/Models/hsi.nas</file>-->
 			<!--<file>Aircraft/ec135/Nasal/fcs.nas</file>-->
 			<file>Aircraft/bk117/Nasal/fcs.nas</file>

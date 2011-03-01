@@ -4,31 +4,31 @@
 	<sim>
 		<model>
 			<rotorblade>
-				<name type="string">FlightGear</name>
+				<name type="string">Christoph 1</name>
 					 <index type="int">1</index>
 					  <texture>rotorblade.png</texture>
 			</rotorblade>
 				<livery>
-					<name type="string">FlightGear</name>
+					<name type="string">Christoph1</name>
 					 <index type="int">1</index>
-					  <texture>FLIGHTGEAR.png</texture>
+					  <texture>CHRISTOPH1.png</texture>
 				</livery>
 				<bk117>
 				<hide-gsdi>true</hide-gsdi>
 				<sandfilter type="bool">false</sandfilter>
 				<radom type="bool">false</radom>
-				<winch>false</winch>
+				<winch>true</winch>
 				<searchlight_front>false</searchlight_front>
 				<wirecutter>false</wirecutter>
 				<searchlight_left>false</searchlight_left>
 				<FLIR>false</FLIR>
 				<skid_floats>false</skid_floats>
 				<skid>true</skid>
-				<snowboard>false</snowboard>
+				<snowboard>true</snowboard>
 				<reardoor_right>true</reardoor_right>
-				<reardoor_left>true</reardoor_left>
+				<reardoor_left>false</reardoor_left>
 				<reardoor_wind_right>false</reardoor_wind_right>
-				<reardoor_wind_left>false</reardoor_wind_left>
+				<reardoor_wind_left>true</reardoor_wind_left>
 			
 			<material>
 			<fuselage>
@@ -47,7 +47,7 @@
 			</bk117>
 		 </model>
 	  <rendering>
-    <refl_correction type="string">-0.1875</refl_correction>
+    <refl_correction type="string">-0.1475</refl_correction>
     </rendering>
 	</sim>
 </PropertyList>

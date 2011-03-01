@@ -1318,7 +1318,7 @@
 		<type>select</type>
 		<object-name>wire_cutter</object-name>
 		<condition>
-			<property>sim/model/bk117/wire_cutter</property>
+			<property>sim/model/bk117/wirecutter</property>
 		</condition>
 </animation>
 
@@ -1348,9 +1348,9 @@
 
 <animation>
 		<type>select</type>
-		<object-name>whinch</object-name>
+		<object-name>winch</object-name>
 		<condition>
-			<property>sim/model/bk117/whinch</property>
+			<property>sim/model/bk117/winch</property>
 		</condition>
 </animation>
 
@@ -1398,7 +1398,7 @@
 		<object-name>frontdoor_right</object-name>
 		<object-name>frontdoor_left</object-name>
 		<object-name>backdoor_right</object-name>
-		<object-name>backdoor_light</object-name>
+		<object-name>backdoor_left</object-name>
 		<object-name>reardoor_wind_left</object-name>
 		<object-name>reardoor_wind_right</object-name>
 		<object-name>radom</object-name>
@@ -1408,9 +1408,43 @@
 		<object-name>skid_floats</object-name>
 		<object-name>nacaintake</object-name>
 		<object-name>rotorheaddisc</object-name>
-		<property-base>sim/model/livery/</property-base>
+		<property-base>sim/model/livery</property-base>
 		<texture-prop>texture</texture-prop>
 		<texture>default.png</texture>
+</animation>
+
+<animation>
+		<type>material</type>
+		<!--global type="bool">true</global-->
+		<object-name>fuselage</object-name>
+		<object-name>nose</object-name>
+		<object-name>reardoor_right</object-name>
+		<object-name>reardoor_left</object-name>
+		<object-name>frontdoor_right</object-name>
+		<object-name>frontdoor_left</object-name>
+		<object-name>backdoor_right</object-name>
+		<object-name>backdoor_left</object-name>
+		<object-name>reardoor_wind_left</object-name>
+		<object-name>reardoor_wind_right</object-name>
+		<object-name>radom</object-name>
+		<object-name>wire_cutter</object-name>
+		<object-name>sandfilter</object-name>
+		<object-name>skid</object-name>
+		<object-name>skid_floats</object-name>
+		<object-name>nacaintake</object-name>
+		<object-name>rotorheaddisc</object-name>
+		<property-base>sim/model/bk117/material/fuselage</property-base>
+		<diffuse>
+			<red-prop>diffuse/red</red-prop>
+			<green-prop>diffuse/green</green-prop>
+			<blue-prop>diffuse/blue</blue-prop>
+		</diffuse>
+		
+		<specular>
+			<red-prop>specular/red</red-prop>
+			<green-prop>specular/green</green-prop>
+			<blue-prop>specular/blue</blue-prop>
+		</specular>
 </animation>
 
 

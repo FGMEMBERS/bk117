@@ -4,31 +4,31 @@
 	<sim>
 		<model>
 			<rotorblade>
-				<name type="string">FlightGear</name>
+				<name type="string">FlightGear"</name>
 					 <index type="int">1</index>
 					  <texture>rotorblade.png</texture>
 			</rotorblade>
 				<livery>
-					<name type="string">FlightGear</name>
+					<name type="string">Military</name>
 					 <index type="int">1</index>
-					  <texture>FLIGHTGEAR.png</texture>
+					  <texture>MILITARY.png</texture>
 				</livery>
 				<bk117>
 				<hide-gsdi>true</hide-gsdi>
-				<sandfilter type="bool">false</sandfilter>
+				<sandfilter type="bool">true</sandfilter>
 				<radom type="bool">false</radom>
-				<winch>false</winch>
+				<winch>true</winch>
 				<searchlight_front>false</searchlight_front>
-				<wirecutter>false</wirecutter>
+				<wirecutter>true</wirecutter>
 				<searchlight_left>false</searchlight_left>
 				<FLIR>false</FLIR>
-				<skid_floats>false</skid_floats>
-				<skid>true</skid>
+				<skid_floats>true</skid_floats>
+				<skid>false</skid>
 				<snowboard>false</snowboard>
-				<reardoor_right>true</reardoor_right>
-				<reardoor_left>true</reardoor_left>
-				<reardoor_wind_right>false</reardoor_wind_right>
-				<reardoor_wind_left>false</reardoor_wind_left>
+				<reardoor_right>false</reardoor_right>
+				<reardoor_left>false</reardoor_left>
+				<reardoor_wind_right>true</reardoor_wind_right>
+				<reardoor_wind_left>true</reardoor_wind_left>
 			
 			<material>
 			<fuselage>
@@ -37,17 +37,19 @@
 							<green>1.0</green>
 							<blue>1.0</blue>
 						</diffuse>
- 					         <specular>
-							<red>1.0</red>
-							<green>1.0</green>
-							<blue>1.0</blue>
+
+						<specular>
+							<red>0.3</red>
+							<green>0.3</green>
+							<blue>0.3</blue>
 						</specular>
 				</fuselage>
                                </material>
+
 			</bk117>
 		 </model>
 	  <rendering>
-    <refl_correction type="string">-0.1875</refl_correction>
+    <refl_correction type="string">-0.5</refl_correction>
     </rendering>
 	</sim>
 </PropertyList>

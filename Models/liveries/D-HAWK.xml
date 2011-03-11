@@ -4,14 +4,14 @@
 	<sim>
 		<model>
 			<rotorblade>
-				<name type="string">FlightGear</name>
+				<name type="string">D-HAWK</name>
 					 <index type="int">1</index>
 					  <texture>rotorblade.png</texture>
 			</rotorblade>
 				<livery>
-					<name type="string">FlightGear</name>
+					<name type="string">D-HAWK</name>
 					 <index type="int">1</index>
-					  <texture>FLIGHTGEAR.png</texture>
+					  <texture>D-HAWK.png</texture>
 				</livery>
 				<bk117>
 				<hide-gsdi>true</hide-gsdi>
@@ -26,9 +26,9 @@
 				<skid>true</skid>
 				<snowboard>false</snowboard>
 				<reardoor_right>true</reardoor_right>
-				<reardoor_left>true</reardoor_left>
+				<reardoor_left>false</reardoor_left>
 				<reardoor_wind_right>false</reardoor_wind_right>
-				<reardoor_wind_left>false</reardoor_wind_left>
+				<reardoor_wind_left>true</reardoor_wind_left>
 			
 			<material>
 			<fuselage>
@@ -47,7 +47,7 @@
 			</bk117>
 		 </model>
 	  <rendering>
-    <refl_correction type="string">-0.05</refl_correction>
+    <refl_correction type="string">-0.10</refl_correction>
     </rendering>
 	</sim>
 </PropertyList>

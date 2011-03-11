@@ -63,6 +63,11 @@ EC 135 simulation config.
 				<reardoor_wind_left>false</reardoor_wind_left>
 			<material>
 				<fuselage>
+				                     <diffuse>
+							<red>1.0</red>
+							<green>1.0</green>
+							<blue>1.0</blue>
+						</diffuse>
 						<specular>
 							<red>1.0</red>
 							<green>1.0</green>
@@ -73,7 +78,7 @@ EC 135 simulation config.
 			</bk117>
 		</model>
 <rendering>
-    <refl_correction type="string">-0.2</refl_correction>
+    <refl_correction type="string">-0.05</refl_correction>
     </rendering>
 		
 <airport>

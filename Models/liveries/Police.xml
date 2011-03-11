@@ -19,12 +19,12 @@
 				<radom type="bool">true</radom>
 				<winch>false</winch>
 				<searchlight_front>false</searchlight_front>
-				<wirecutter>true</wirecutter>
+				<wirecutter>false</wirecutter>
 				<searchlight_left>true</searchlight_left>
 				<FLIR>true</FLIR>
 				<skid_floats>false</skid_floats>
 				<skid>true</skid>
-				<snowboard>true</snowboard>
+				<snowboard>false</snowboard>
 				<reardoor_right>true</reardoor_right>
 				<reardoor_left>false</reardoor_left>
 				<reardoor_wind_right>false</reardoor_wind_right>
@@ -47,7 +47,7 @@
 			</bk117>
 		 </model>
 	  <rendering>
-    <refl_correction type="string">-0.125</refl_correction>
+    <refl_correction type="string">-0.05</refl_correction>
     </rendering>
 	</sim>
 </PropertyList>

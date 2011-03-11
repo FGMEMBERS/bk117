@@ -152,11 +152,11 @@
 
 <!-- left skid -->
 <gear x="-1.24" y="+1.30" z="-1.69" skid="1" compression="0.20" spring="1.6" sfric="0.5" dfric="0.4"/>
-<gear x="-3.52" y="+1.30" z="-1.5" skid="1" compression="0.20" spring="1.6" sfric="0.5" dfric="0.4"/>
+<gear x="-3.52" y="+1.30" z="-1.55" skid="1" compression="0.20" spring="1.6" sfric="0.5" dfric="0.4"/>
 
 <!-- right skid -->
 <gear x="-1.24" y="-1.30" z="-1.69" skid="1" compression="0.20" spring="1.6" sfric="0.5" dfric="0.4"/>
-<gear x="-3.52" y="-1.30" z="-1.5" skid="1" compression="0.20" spring="1.6" sfric="0.5" dfric="0.4"/>
+<gear x="-3.52" y="-1.30" z="-1.55" skid="1" compression="0.20" spring="1.6" sfric="0.5" dfric="0.4"/>
 
 <!-- tail skid -->
 <gear x="-8.893" y="+0.00" z="-0.034" skid="1" compression="0.01" spring="0.1" sfric="1" dfric="1"/>

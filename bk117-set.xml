@@ -51,12 +51,7 @@ EC 135 simulation config.
 			<index type="int">1</index>
                             </livery>
 	   
-	    <rotorblade>
-				<name type="string">FlightGear"</name>
-					 <index type="int">1</index>
-					  <texture>rotorblade.png</texture>
-				</rotorblade>
-			<bk117>
+	    		<bk117>
 				<hide-gsdi>true</hide-gsdi>
 				<sandfilter type="bool">false</sandfilter>
 				<radom type="bool">false</radom>
@@ -86,6 +81,9 @@ EC 135 simulation config.
 						</specular>
 				</fuselage>
                               </material>
+			<rotor>
+				 <texture>Rotor/white.png</texture>
+			</rotor>
 			</bk117>
 		</model>
 <rendering>

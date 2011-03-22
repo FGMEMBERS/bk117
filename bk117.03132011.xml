@@ -21,7 +21,7 @@
   mincyclicail="-4.66" maxcyclicail="6.22"
   diameter="11" numblades="4" weightperblade="75" relbladecenter="0.5"
   dynamic="1" rpm="383" rellenflaphinge="0.18" delta3="0"
-  phi0="45"
+  phi0="0"
   delta=".125"
   pitch-a="10"
   pitch-b="15"

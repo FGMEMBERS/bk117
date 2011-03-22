@@ -237,7 +237,7 @@
 			<alpha-prop>rotors/tail/rpm</alpha-prop>
 			<factor>0.0015</factor>
 			<offset>-0.2</offset>
-			<max>0.1</max>
+			<max>1.0</max>
 		</transparency>
 		<threshold>0.001</threshold>
 	</animation>
@@ -370,7 +370,7 @@
 
 	<animation>
 		<type>rotate</type>
-		<object-name>Plane.024</object-name>
+		<object-name>rotorheaddisc</object-name>
 		<object-name>star_hub</object-name>
 		<object-name>star_cap1</object-name>
 		<object-name>star_cap2</object-name>
@@ -491,7 +491,7 @@
 			<alpha-prop>rotors/main/rpm</alpha-prop>
 			<factor>0.004</factor>
 			<offset>-0.2</offset>
-			<max>0.1</max>
+			<max>1.0</max>
 		</transparency>
 		<threshold>0.001</threshold>
 	</animation>
@@ -502,7 +502,37 @@
 	</animation>
 
 	<!-- main rotor blades -->
-
+<animation>
+		<object-name>main_rotor_disc</object-name>
+               <property>rotors/main/roll-deg</property>
+		<factor>1</factor>
+		<center>
+			<x-m>-0.0</x-m>
+			<y-m>-0.0</y-m>
+			<z-m>1.812</z-m>
+		</center>
+		<axis>
+			<x>1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+	</animation>	
+	
+<animation>
+		<object-name>main_rotor_disc</object-name>
+               <property>rotors/main/yaw-deg</property>
+		<factor>1</factor>
+		<center>
+			<x-m>-0.0</x-m>
+			<y-m>-0.0</y-m>
+			<z-m>1.812</z-m>
+		</center>
+		<axis>
+			<x>0</x>
+			<y>1</y>
+			<z>0</z>
+		</axis>
+	</animation>
 
 	<animation>
 		<type>spin</type>
@@ -702,7 +732,7 @@
 		<property>rotors/main/blade[0]/flap-deg</property>
 		<factor alias="../../params/flapA/factor"/>
 		<center>
-			<x-m>1.007322</x-m>
+			<x-m>1.11027474949900276008</x-m>
 			<y-m>0</y-m>
 			<z-m>1.83294</z-m>
 		</center>
@@ -726,7 +756,7 @@
 		<property>rotors/main/blade[0]/flap-deg</property>
 		<factor alias="../../params/flapB/factor"/>
 		<center>
-			<x-m>1.807322</x-m>
+			<x-m>1.99203827655311476008</x-m>
 			<y-m>0</y-m>
 			<z-m>1.83294</z-m>
 		</center>
@@ -748,7 +778,7 @@
 		<property>rotors/main/blade[0]/flap-deg</property>
 		<factor alias="../../params/flapC/factor"/>
 		<center>
-			<x-m>2.607322</x-m>
+			<x-m>2.87380180360722676008</x-m>
 			<y-m>0</y-m>
 			<z-m>1.83294</z-m>
 		</center>
@@ -768,7 +798,7 @@
 		<property>rotors/main/blade[0]/flap-deg</property>
 		<factor alias="../../params/flapD/factor"/>
 		<center>
-			<x-m>3.307322</x-m>
+			<x-m>3.64534488977957476008</x-m>
 			<y-m>0</y-m>
 			<z-m>1.83294</z-m>
 		</center>
@@ -786,7 +816,7 @@
 		<property>rotors/main/blade[0]/flap-deg</property>
 		<factor alias="../../params/flapE/factor"/>
 		<center>
-			<x-m>4.007321</x-m>
+			<x-m>4.41688687374751394244</x-m>
 			<y-m>0</y-m>
 			<z-m>1.83294</z-m>
 		</center>
@@ -802,9 +832,9 @@
 		<object-name>pendulum1</object-name>
 		<property>sim/model/bk117/absorber-angle-deg</property>
 		<center>
-			<x-m>0.745474</x-m>
+			<x-m>0.820</x-m>
 			<y-m>0</y-m>
-			<z-m>1.846635</z-m>
+			<z-m>1.848</z-m>
 		</center>
 		<axis>
 			<x>0</x>
@@ -885,7 +915,7 @@
 		<factor alias="../../params/flapA/factor"/>
 		<center>
 			<x-m>0</x-m>
-			<y-m>-1.007322</y-m>
+			<y-m>-1.11027474949900276008</y-m>
 			<z-m>1.83294</z-m>
 		</center>
 		<axis>
@@ -909,7 +939,7 @@
 		<factor alias="../../params/flapB/factor"/>
 		<center>
 			<x-m>0</x-m>
-			<y-m>-1.807322</y-m>
+			<y-m>-1.99203827655311476008</y-m>
 			<z-m>1.83294</z-m>
 		</center>
 		<axis>
@@ -931,7 +961,7 @@
 		<factor alias="../../params/flapC/factor"/>
 		<center>
 			<x-m>0</x-m>
-			<y-m>-2.607322</y-m>
+			<y-m>-2.87380180360722676008</y-m>
 			<z-m>1.83294</z-m>
 		</center>
 		<axis>
@@ -951,7 +981,7 @@
 		<factor alias="../../params/flapD/factor"/>
 		<center>
 			<x-m>0</x-m>
-			<y-m>-3.307322</y-m>
+			<y-m>-3.64534488977957476008</y-m>
 			<z-m>1.83294</z-m>
 		</center>
 		<axis>
@@ -969,7 +999,7 @@
 		<factor alias="../../params/flapE/factor"/>
 		<center>
 			<x-m>0</x-m>
-			<y-m>-4.007321</y-m>
+			<y-m>-4.41688687374751394244</y-m>
 			<z-m>1.83294</z-m>
 		</center>
 		<axis>
@@ -985,8 +1015,8 @@
 		<property>sim/model/bk117/absorber-angle-deg</property>
 		<center>
 			<x-m>0</x-m>
-			<y-m>-0.745474</y-m>
-			<z-m>1.846635</z-m>
+			<y-m>-0.821</y-m>
+			<z-m>1.848</z-m>
 		</center>
 		<axis>
 			<x>-1</x>
@@ -1066,7 +1096,7 @@
 		<property>rotors/main/blade[2]/flap-deg</property>
 		<factor alias="../../params/flapA/factor"/>
 		<center>
-			<x-m>-1.007322</x-m>
+			<x-m>-1.11027474949900276008</x-m>
 			<y-m>0</y-m>
 			<z-m>1.83294</z-m>
 		</center>
@@ -1090,7 +1120,7 @@
 		<property>rotors/main/blade[2]/flap-deg</property>
 		<factor alias="../../params/flapB/factor"/>
 		<center>
-			<x-m>-1.807322</x-m>
+			<x-m>-1.99203827655311476008</x-m>
 			<y-m>0</y-m>
 			<z-m>1.83294</z-m>
 		</center>
@@ -1112,7 +1142,7 @@
 		<property>rotors/main/blade[2]/flap-deg</property>
 		<factor alias="../../params/flapC/factor"/>
 		<center>
-			<x-m>-2.607322</x-m>
+			<x-m>-2.87380180360722676008</x-m>
 			<y-m>0</y-m>
 			<z-m>1.83294</z-m>
 		</center>
@@ -1132,7 +1162,7 @@
 		<property>rotors/main/blade[2]/flap-deg</property>
 		<factor alias="../../params/flapD/factor"/>
 		<center>
-			<x-m>-3.307322</x-m>
+			<x-m>-3.64534488977957476008</x-m>
 			<y-m>0</y-m>
 			<z-m>1.83294</z-m>
 		</center>
@@ -1150,7 +1180,7 @@
 		<property>rotors/main/blade[2]/flap-deg</property>
 		<factor alias="../../params/flapE/factor"/>
 		<center>
-			<x-m>-4.007321</x-m>
+			<x-m>-4.41688687374751394244</x-m>
 			<y-m>0</y-m>
 			<z-m>1.83294</z-m>
 		</center>
@@ -1166,9 +1196,9 @@
 		<object-name>pendulum3</object-name>
 		<property>sim/model/bk117/absorber-angle-deg</property>
 		<center>
-			<x-m>-0.745474</x-m>
+			<x-m>-0.823</x-m>
 			<y-m>0</y-m>
-			<z-m>1.846635</z-m>
+			<z-m>1.848</z-m>
 		</center>
 		<axis>
 			<x>0</x>
@@ -1249,7 +1279,7 @@
 		<factor alias="../../params/flapA/factor"/>
 		<center>
 			<x-m>0</x-m>
-			<y-m>1.007322</y-m>
+			<y-m>1.11027474949900276008</y-m>
 			<z-m>1.83294</z-m>
 		</center>
 		<axis>
@@ -1273,7 +1303,7 @@
 		<factor alias="../../params/flapB/factor"/>
 		<center>
 			<x-m>0</x-m>
-			<y-m>1.807322</y-m>
+			<y-m>1.99203827655311476008</y-m>
 			<z-m>1.83294</z-m>
 		</center>
 		<axis>
@@ -1295,7 +1325,7 @@
 		<factor alias="../../params/flapC/factor"/>
 		<center>
 			<x-m>0</x-m>
-			<y-m>2.607322</y-m>
+			<y-m>2.87380180360722676008</y-m>
 			<z-m>1.83294</z-m>
 		</center>
 		<axis>
@@ -1315,7 +1345,7 @@
 		<factor alias="../../params/flapD/factor"/>
 		<center>
 			<x-m>0</x-m>
-			<y-m>3.307322</y-m>
+			<y-m>3.64534488977957476008</y-m>
 			<z-m>1.83294</z-m>
 		</center>
 		<axis>
@@ -1333,7 +1363,7 @@
 		<factor alias="../../params/flapE/factor"/>
 		<center>
 			<x-m>0</x-m>
-			<y-m>4.007321</y-m>
+			<y-m>4.41688687374751394244</y-m>
 			<z-m>1.83294</z-m>
 		</center>
 		<axis>
@@ -1349,8 +1379,8 @@
 		<property>sim/model/bk117/absorber-angle-deg</property>
 		<center>
 			<x-m>0</x-m>
-			<y-m>0.745474</y-m>
-			<z-m>1.846635</z-m>
+			<y-m>0.7822</y-m>
+			<z-m>1.848</z-m>
 		</center>
 		<axis>
 			<x>1</x>
@@ -1687,6 +1717,18 @@
 		<texture-prop>texture</texture-prop>
 		<texture>default.png</texture>
 </animation>
+
+<animation>
+		<type>material</type>
+		<object-name>main_rotor_blades</object-name>
+		<object-name>main_rotor_disc</object-name>
+		<object-name>rotor_disc_T</object-name>
+		<property-base>sim/model/bk117/rotor/</property-base>
+		<texture-prop>texture</texture-prop>
+		<texture>white.png</texture>
+</animation>
+
+
 
 <animation>
 		<type>material</type>

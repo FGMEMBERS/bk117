@@ -11,7 +11,7 @@
 				<livery>
 					<name type="string">Police</name>
 					 <index type="int">1</index>
-					  <texture>POLICE.png</texture>
+					  <texture>POLICE.dds</texture>
 				</livery>
 				<bk117>
 				<hide-gsdi>true</hide-gsdi>

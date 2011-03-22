@@ -22,9 +22,20 @@ EC 135 simulation config.
 			<splash-texture>Aircraft/bk117/splash.rgb</splash-texture>
 		</startup>-->
 
+  <multiplay>
+            <generic>
+                <int n="0" alias="/systems/electrical/outputs/beacon"/>
+                <int n="1" alias="/systems/electrical/outputs/strobe"/>
+                <int n="2" alias="/systems/electrical/outputs/nav-lights"/>
+                <float  alias="/controls/landinglight/position-norm"/>
+                <string  alias="/sim/multiplay/callsign"/>
+            </generic>
+        </multiplay>
+
 		<sound>
 			<path>Aircraft/bo105/Sounds/sound.xml</path>
 		</sound>
+
 
 
 		<!--<instrumentation>
@@ -272,32 +283,7 @@ EC 135 simulation config.
 	<input>
 		<keyboard>
 		
-		<!--<key n="4">
-				<name>Ctrl-D</name>
-				<desc>Open/close selected door</desc>
-				<binding>
-					<command>nasal</command>
-					<script>ec135.doors.toggle()</script>
-				</binding>
-			</key>
 		
-		<key n="68">
-				<name>D</name>
-				<desc>Select previous door</desc>
-				<binding>
-					<command>nasal</command>
-					<script>ec135.doors.previous()</script>
-				</binding>
-			</key>
-		
-		<key n="100">
-				<name>d</name>
-				<desc>Select next door</desc>
-				<binding>
-					<command>nasal</command>
-					<script>ec135.doors.next()</script>
-				</binding>
-			</key>-->
 		
 <key n="4">
     <name>Ctrl-d</name>
@@ -445,6 +431,14 @@ EC 135 simulation config.
 						<value type="bool">false</value>
 					</binding>
 				</mod-up>
+			</key>
+			<key n="108">
+				<name>l</name>
+				<desc>Landing Light</desc>
+				 <binding>
+                        <command>nasal</command>
+                        <script>bk117.landinglight.toggle()</script>
+                    </binding>
 			</key>
 
 		</keyboard>

@@ -11,7 +11,7 @@
 				<livery>
 					<name type="string">FlightGear</name>
 					 <index type="int">1</index>
-					  <texture>FLIGHTGEAR.png</texture>
+					  <texture>FLIGHTGEAR.dds</texture>
 				</livery>
 				<bk117>
 				<hide-gsdi>true</hide-gsdi>

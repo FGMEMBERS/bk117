@@ -21,6 +21,9 @@ var min = func(a, b) a < b ? a : b;
 # liveries =========================================================
 aircraft.livery.init("Aircraft/bk117/Models/liveries");
 
+#retractable landinglight================================================
+var landinglight = aircraft.door.new("/controls/landinglight", 2);
+
 # timers ============================================================
 aircraft.timer.new("/sim/time/hobbs/helicopter", nil).start();
 

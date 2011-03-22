@@ -31,6 +31,7 @@
 		<object-name>reardoor_wind_left</object-name>
 		<object-name>radom</object-name>
 		<object-name>nose</object-name>
+		<object-name>Plane.009</object-name>
 </effect>
 
 <effect>
@@ -236,15 +237,16 @@
 			<alpha-prop>rotors/tail/rpm</alpha-prop>
 			<factor>0.0015</factor>
 			<offset>-0.2</offset>
-			<max>0.55</max>
+			<max>0.1</max>
 		</transparency>
 		<threshold>0.001</threshold>
 	</animation>
 
 	<animation>
-		<type>rotate</type>
+		<type>spin</type>
 		<object-name>rotor_disc_T</object-name>
-		<property>rotors/tail/blade[0]/position-deg</property>
+		<property>rotors/tail/rpm</property>
+		<factor>0.05</factor>
 		<center>
 			<x-m>6.482</x-m>
 			<y-m>-0.232</y-m>
@@ -275,7 +277,30 @@
 		</transparency>
 	</animation>
 
-	<animation>
+<animation>
+		<type>spin</type>
+		<object-name>tailsleeverot</object-name>
+		<object-name>tailrotorshaft</object-name>
+		<object-name>tailpitchlink_1</object-name>
+		<object-name>tailpitchlink_2</object-name>
+		<object-name>tailrotor_blade1</object-name>
+		<object-name>tailrotor_blade2</object-name>
+		<object-name>fake_axis</object-name>
+		<property>rotors/tail/rpm</property>
+		<factor>1.0</factor>
+		<center>
+			<x-m>6.482</x-m>
+			<y-m>-0.232</y-m>
+			<z-m>1.987</z-m>
+		</center>
+		<axis>
+			<x>0</x>
+			<y>1</y>
+			<z>0</z>
+		</axis>
+	</animation>
+
+	<!--<animation>
 		<type>rotate</type>
 		<object-name>tailsleeverot</object-name>
 		<object-name>tailrotorshaft</object-name>
@@ -295,7 +320,7 @@
 			<y>1</y>
 			<z>0</z>
 		</axis>
-	</animation>
+	</animation>-->
 
 	<animation>
 		<type>rotate</type>
@@ -434,7 +459,7 @@
 
 	<!-- main rotor (always visible parts) -->
 
-	<animation>
+	<!--<animation>
 		<type>rotate</type>
 		<object-name>star_hub</object-name>
 		<object-name>star_cap1</object-name>
@@ -455,7 +480,7 @@
 			<y>0</y>
 			<z>1</z>
 		</axis>
-	</animation>
+	</animation>-->
 
 	<!-- main rotor disc -->
 
@@ -466,7 +491,7 @@
 			<alpha-prop>rotors/main/rpm</alpha-prop>
 			<factor>0.004</factor>
 			<offset>-0.2</offset>
-			<max>0.55</max>
+			<max>0.1</max>
 		</transparency>
 		<threshold>0.001</threshold>
 	</animation>
@@ -478,9 +503,137 @@
 
 	<!-- main rotor blades -->
 
-	<!-- blade 1 -->
 
 	<animation>
+		<type>spin</type>
+		<object-name>star_hub</object-name>
+		<object-name>star_cap1</object-name>
+		<object-name>star_cap2</object-name>
+		<object-name>star_cap3</object-name>
+		<object-name>star_cap4</object-name>
+		<object-name>eye</object-name>
+		<object-name>rotoraxis</object-name>
+		<object-name>swashplate_rotor</object-name>
+		<object-name>swashplate_cap</object-name>
+		<object-name>pitch_link1</object-name>
+		<object-name>pitch_link2</object-name>
+		<object-name>pitch_link3</object-name>
+		<object-name>pitch_link4</object-name>
+		<object-name>blade_mounting_fork1</object-name>
+		<object-name>pitch_horn1</object-name>
+		<object-name>blade_fitting1</object-name>
+		<object-name>blade1</object-name>
+		<object-name>blade1a</object-name>
+		<object-name>blade1b</object-name>
+		<object-name>blade1c</object-name>
+		<object-name>blade1d</object-name>
+		<object-name>blade1e</object-name>
+		<object-name>absorber1</object-name>
+		<object-name>pendulum1</object-name>
+		<object-name>disc1</object-name>
+		<object-name>disc1a</object-name>
+		<object-name>disc1b</object-name>
+		<object-name>disc1c</object-name>
+		<object-name>disc1d</object-name>
+		<object-name>disc1e</object-name>
+		<object-name>blade_mounting_fork2</object-name>
+		<object-name>pitch_horn2</object-name>
+		<object-name>blade_fitting2</object-name>
+		<object-name>blade2</object-name>
+		<object-name>blade2a</object-name>
+		<object-name>blade2b</object-name>
+		<object-name>blade2c</object-name>
+		<object-name>blade2d</object-name>
+		<object-name>blade2e</object-name>
+		<object-name>absorber2</object-name>
+		<object-name>pendulum2</object-name>
+		<object-name>disc2</object-name>
+		<object-name>disc2a</object-name>
+		<object-name>disc2b</object-name>
+		<object-name>disc2c</object-name>
+		<object-name>disc2d</object-name>
+		<object-name>disc2e</object-name>
+		<object-name>blade_mounting_fork3</object-name>
+		<object-name>pitch_horn3</object-name>
+		<object-name>blade_fitting3</object-name>
+		<object-name>blade3</object-name>
+		<object-name>blade3a</object-name>
+		<object-name>blade3b</object-name>
+		<object-name>blade3c</object-name>
+		<object-name>blade3d</object-name>
+		<object-name>blade3e</object-name>
+		<object-name>absorber3</object-name>
+		<object-name>pendulum3</object-name>
+		<object-name>disc3</object-name>
+		<object-name>disc3a</object-name>
+		<object-name>disc3b</object-name>
+		<object-name>disc3c</object-name>
+		<object-name>disc3d</object-name>
+		<object-name>disc3e</object-name>
+		<object-name>blade_mounting_fork4</object-name>
+		<object-name>pitch_horn4</object-name>
+		<object-name>blade_fitting4</object-name>
+		<object-name>blade4</object-name>
+		<object-name>blade4a</object-name>
+		<object-name>blade4b</object-name>
+		<object-name>blade4c</object-name>
+		<object-name>blade4d</object-name>
+		<object-name>blade4e</object-name>
+		<object-name>absorber4</object-name>
+		<object-name>pendulum4</object-name>
+		<object-name>disc4</object-name>
+		<object-name>disc4a</object-name>
+		<object-name>disc4b</object-name>
+		<object-name>disc4c</object-name>
+		<object-name>disc4d</object-name>
+		<object-name>disc4e</object-name>
+		<property>rotors/main/rpm</property>
+		<factor>1.0</factor>
+		<axis>
+			<x>0</x>
+			<y>0</y>
+			<z>1</z>
+		</axis>
+	</animation>
+	
+	<animation>
+		<type>spin</type>
+		<object-name>disc1</object-name>
+		<object-name>disc1a</object-name>
+		<object-name>disc1b</object-name>
+		<object-name>disc1c</object-name>
+		<object-name>disc1d</object-name>
+		<object-name>disc1e</object-name>
+		<object-name>disc2</object-name>
+		<object-name>disc2a</object-name>
+		<object-name>disc2b</object-name>
+		<object-name>disc2c</object-name>
+		<object-name>disc2d</object-name>
+		<object-name>disc2e</object-name>
+		<object-name>disc3</object-name>
+		<object-name>disc3a</object-name>
+		<object-name>disc3b</object-name>
+		<object-name>disc3c</object-name>
+		<object-name>disc3d</object-name>
+		<object-name>disc3e</object-name>
+		<object-name>disc4</object-name>
+		<object-name>disc4a</object-name>
+		<object-name>disc4b</object-name>
+		<object-name>disc4c</object-name>
+		<object-name>disc4d</object-name>
+		<object-name>disc4e</object-name>
+		<property>rotors/main/rpm</property>
+		<factor>0.05</factor>
+		<axis>
+			<x>0</x>
+			<y>0</y>
+			<z>1</z>
+		</axis>
+	</animation>
+
+	<!-- blade 1 -->
+
+	<!--<animation>
 		<type>rotate</type>
 		<object-name>blade_mounting_fork1</object-name>
 		<object-name>pitch_horn1</object-name>
@@ -499,14 +652,14 @@
 		<object-name>disc1c</object-name>
 		<object-name>disc1d</object-name>
 		<object-name>disc1e</object-name>
-		<property>rotors/main/blade[0]/position-deg</property>
+		<property>rotors/main/rpm</property>
 		<offset-deg>0</offset-deg>
 		<axis>
 			<x>0</x>
 			<y>0</y>
 			<z>1</z>
 		</axis>
-	</animation>
+	</animation>-->
 
 	<animation>
 		<type>rotate</type>
@@ -662,7 +815,7 @@
 
 	<!-- blade 2 -->
 
-	<animation>
+	<!--<animation>
 		<type>rotate</type>
 		<object-name>blade_mounting_fork2</object-name>
 		<object-name>pitch_horn2</object-name>
@@ -688,7 +841,7 @@
 			<y>0</y>
 			<z>1</z>
 		</axis>
-	</animation>
+	</animation>-->
 
 	<animation>
 		<type>rotate</type>
@@ -844,7 +997,7 @@
 
 	<!-- blade 3 -->
 
-	<animation>
+	<!--<animation>
 		<type>rotate</type>
 		<object-name>blade_mounting_fork3</object-name>
 		<object-name>pitch_horn3</object-name>
@@ -870,7 +1023,7 @@
 			<y>0</y>
 			<z>1</z>
 		</axis>
-	</animation>
+	</animation>-->
 
 	<animation>
 		<type>rotate</type>
@@ -1026,7 +1179,7 @@
 
 	<!-- blade 4 -->
 
-	<animation>
+	<!--<animation>
 		<type>rotate</type>
 		<object-name>blade_mounting_fork4</object-name>
 		<object-name>pitch_horn4</object-name>
@@ -1052,7 +1205,7 @@
 			<y>0</y>
 			<z>1</z>
 		</axis>
-	</animation>
+	</animation>-->
 
 	<animation>
 		<type>rotate</type>
@@ -1270,6 +1423,106 @@
 			<offset>1</offset>
 		</transparency>
 	</animation>
+	
+<!-- lighting-->
+<animation>
+		<type>flash</type>
+		<object-name>halo</object-name>
+		<center>
+			<x-m>-2.974</x-m>
+			<y-m>-0.004</y-m>
+			<z-m>-0.603</z-m>
+		</center>
+		<axis>
+			<x>-1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+		<power>5</power>
+		<factor>1</factor>
+		<offset>0</offset>
+		<two-sides type="bool">false</two-sides>
+		<min>0.01</min>
+		<max>1</max>
+	</animation>
+
+   <animation>
+        <type>rotate</type>
+        <object-name>landinglight</object-name>
+	 <object-name>lightglas</object-name>
+	 <object-name>llight</object-name>
+        <object-name>halo.001</object-name>
+        <property>sim/multiplay/generic/float</property>
+        <factor>-50.0</factor>
+        <center>
+            <x-m>-2.898</x-m>
+            <y-m>0.004</y-m>
+            <z-m>-0.657</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+    
+<animation>
+		<type>select</type>
+		 <object-name>llight</object-name>
+        <object-name>halo.001</object-name>
+		<condition>
+		<less-than>
+			<property>sim/multiplay/generic/float</property>
+			<value>0.5</value>
+		</less-than>
+		</condition>
+</animation>
+
+<animation>
+		<type>flash</type>
+		<object-name>halo.001</object-name>
+		<center>
+			<x-m>-2.860</x-m>
+			<y-m>0.005</y-m>
+			<z-m>-0.757</z-m>
+		</center>
+		<axis>
+			<x>-1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+		<power>5</power>
+		<factor>1</factor>
+		<offset>0</offset>
+		<two-sides type="bool">false</two-sides>
+		<min>0.01</min>
+		<max>1</max>
+	</animation>
+	
+<animation>
+		<type>flash</type>
+		<object-name>halo.002</object-name>
+		<center>
+			<x-m>-1.557</x-m>
+			<y-m>-0.782</y-m>
+			<z-m>-0.915</z-m>
+		</center>
+		<axis>
+			<x>-1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+		<power>5</power>
+		<factor>1</factor>
+		<offset>0</offset>
+		<two-sides type="bool">false</two-sides>
+		<min>0.01</min>
+		<max>1</max>
+	</animation>
+	
+
+	
+	
 <!--select animation-->
 <animation>
 		<type>select</type>
@@ -1317,8 +1570,25 @@
 <animation>
 		<type>select</type>
 		<object-name>wire_cutter</object-name>
+		<object-name>landinglight.002</object-name>
+		<object-name>llight.002</object-name>
+		<object-name>lightglas.002</object-name>
+		<object-name>halo.002</object-name>
 		<condition>
 			<property>sim/model/bk117/wirecutter</property>
+		</condition>
+</animation>
+
+<animation>
+		<type>select</type>
+		<object-name>landinglight.004</object-name>
+		<object-name>llight.001</object-name>
+		<object-name>lightglas.001</object-name>
+		<object-name>halo</object-name>
+		<condition>
+		<not>
+			<property>sim/model/bk117/wirecutter</property>
+		</not>
 		</condition>
 </animation>
 
@@ -1378,6 +1648,10 @@
 		</condition>
 </animation>
 
+
+
+
+
 <animation>
 		<type>select</type>
 		<object-name>snowboard</object-name>
@@ -1408,6 +1682,7 @@
 		<object-name>skid_floats</object-name>
 		<object-name>nacaintake</object-name>
 		<object-name>rotorheaddisc</object-name>
+		<object-name>Plane.009</object-name>
 		<property-base>sim/model/livery</property-base>
 		<texture-prop>texture</texture-prop>
 		<texture>default.png</texture>
@@ -1433,6 +1708,7 @@
 		<object-name>skid_floats</object-name>
 		<object-name>nacaintake</object-name>
 		<object-name>rotorheaddisc</object-name>
+		<object-name>Plane.009</object-name>
 		<property-base>sim/model/bk117/material/fuselage</property-base>
 		<diffuse>
 			<red-prop>diffuse/red</red-prop>

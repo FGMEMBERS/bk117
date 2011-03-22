@@ -11,7 +11,7 @@
 				<livery>
 					<name type="string">Military</name>
 					 <index type="int">1</index>
-					  <texture>MILITARY.png</texture>
+					  <texture>MILITARY.dds</texture>
 				</livery>
 				<bk117>
 				<hide-gsdi>true</hide-gsdi>

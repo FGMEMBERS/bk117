@@ -16,12 +16,12 @@
 
 
 <rotor name="main" x="-2.75" y="0.0" z="1.55" nx="0.087" ny="0" nz="1." fx="1" fy="0" fz="0" ccw="1"
-  maxcollective="15.8" mincollective="0.2"
+  maxcollective="17.4" mincollective="0.2"
   mincyclicele="-5.18" maxcyclicele="11.57"
   mincyclicail="-4.66" maxcyclicail="6.22"
   diameter="11" numblades="4" weightperblade="75" relbladecenter="0.5"
   dynamic="1" rpm="383" rellenflaphinge="0.18" delta3="0"
-  phi0="45"
+  phi0="0"
   delta=".125"
   pitch-a="10"
   pitch-b="15"
@@ -51,7 +51,7 @@
   stall-change-over="3"
   drag-factor-stall="8.0"
   cyclic-factor="0.8"
-  rotor-correction-factor="0.95"
+  rotor-correction-factor="0.90"
   downwashfactor="1.0"
 >
   <control-input axis="/controls/flight/aileron-trim" control="CYCLICAIL"/>
@@ -69,10 +69,10 @@
 
 
 <rotor name="tail" x="-9.224" y="0.18" z="1.69" nx="0.07" ny="-1" nz="-0.05" fx="1" fy="0" fz="0" ccw="1"
- maxcollective="16.63" mincollective="-16.63"
+ maxcollective="16.5" mincollective="-16.5"
   phi0="110"
   diameter="1.91" numblades="2" weightperblade="2" relbladecenter="0.7"
-  dynamic="1" rpm="2219" rellenflaphinge="0.0" delta3="1" translift="0" delta="0.5"
+  dynamic="1" rpm="2995" rellenflaphinge="0.0" delta3="1" translift="0" delta="0.5"
   sharedflaphinge="1"
   flap0="-0.5"
   pitch-a="10"

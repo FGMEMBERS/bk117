@@ -1710,11 +1710,14 @@
 		<object-name>sandfilter</object-name>
 		<object-name>skid</object-name>
 		<object-name>skid_floats</object-name>
-		<object-name>nacaintake</object-name>
 		<object-name>rotorheaddisc</object-name>
 		<object-name>Plane.009</object-name>
 		<object-name>Plane.010</object-name>
 		<object-name>nacaintake</object-name>
+		<object-name>winfr</object-name>
+		<object-name>winfl</object-name>
+		<object-name>winbr</object-name>
+		<object-name>winbl</object-name>
 		<property-base>sim/model/livery</property-base>
 		<texture-prop>texture</texture-prop>
 		<texture>default.png</texture>
@@ -1754,6 +1757,10 @@
 		<object-name>rotorheaddisc</object-name>
 		<object-name>Plane.009</object-name>
 		<object-name>Plane.010</object-name>
+		<object-name>winfr</object-name>
+		<object-name>winfl</object-name>
+		<object-name>winbr</object-name>
+		<object-name>winbl</object-name>
 		<property-base>sim/model/bk117/material/fuselage</property-base>
 		<diffuse>
 			<red-prop>diffuse/red</red-prop>

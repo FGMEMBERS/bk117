@@ -67,6 +67,7 @@ EC 135 simulation config.
 				<reardoor_left>true</reardoor_left>
 				<reardoor_wind_right>false</reardoor_wind_right>
 				<reardoor_wind_left>false</reardoor_wind_left>
+				
 			<material>
 				<fuselage>
 				                     <diffuse>

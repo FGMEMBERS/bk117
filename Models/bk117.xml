@@ -32,6 +32,8 @@
 		<object-name>radom</object-name>
 		<object-name>nose</object-name>
 		<object-name>Plane.009</object-name>
+		<object-name>Plane.010</object-name>
+		<object-name>nacaintake</object-name>
 </effect>
 
 <effect>
@@ -65,9 +67,7 @@
 		</flapE>
 	</params>
 
-	<model>
-		<path>Models/Aircraft/marker.xml</path>
-	</model>
+
 
 <!--== object groups ==-->
 
@@ -1713,6 +1713,8 @@
 		<object-name>nacaintake</object-name>
 		<object-name>rotorheaddisc</object-name>
 		<object-name>Plane.009</object-name>
+		<object-name>Plane.010</object-name>
+		<object-name>nacaintake</object-name>
 		<property-base>sim/model/livery</property-base>
 		<texture-prop>texture</texture-prop>
 		<texture>default.png</texture>
@@ -1751,6 +1753,7 @@
 		<object-name>nacaintake</object-name>
 		<object-name>rotorheaddisc</object-name>
 		<object-name>Plane.009</object-name>
+		<object-name>Plane.010</object-name>
 		<property-base>sim/model/bk117/material/fuselage</property-base>
 		<diffuse>
 			<red-prop>diffuse/red</red-prop>

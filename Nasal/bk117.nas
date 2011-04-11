@@ -24,6 +24,15 @@ aircraft.livery.init("Aircraft/bk117/Models/liveries");
 #retractable landinglight================================================
 var landinglight = aircraft.door.new("/controls/landinglight", 2);
 
+#doors=========================
+leftFrontDoor = aircraft.door.new( "/sim/model/bk117/door-positions/leftFrontDoor", 4, 0 );
+rightFrontDoor = aircraft.door.new( "/sim/model/bk117/door-positions/rightFrontDoor", 4, 0 );
+leftBackDoor = aircraft.door.new( "/sim/model/bk117/door-positions/leftBackDoor", 4, 0 );
+rightBackDoor = aircraft.door.new( "/sim/model/bk117/door-positions/rightBackDoor", 4, 0 );
+leftRearDoor = aircraft.door.new( "/sim/model/bk117/door-positions/leftRearDoor", 4, 0 );
+rightRearDoor = aircraft.door.new( "/sim/model/bk117/door-positions/rightRearDoor", 4, 0 );
+
+
 # timers ============================================================
 aircraft.timer.new("/sim/time/hobbs/helicopter", nil).start();
 

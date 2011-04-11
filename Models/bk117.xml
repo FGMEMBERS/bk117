@@ -1388,6 +1388,80 @@
 			<z>0</z>
 		</axis>
 	</animation>
+	
+<!--Doors-->
+<animation>
+   <type>pick</type>
+  <object-name>frontdoor_right</object-name>
+  <object-name>fdoorintr</object-name>
+   <visible>true</visible>
+   <action>
+     <button>0</button>
+     <repeatable>false</repeatable>
+     <binding>
+        <command>nasal</command>
+        <script>bk117.rightFrontDoor.toggle();</script>
+     </binding>
+   </action>
+ </animation>
+
+<animation>
+		<type>rotate</type>
+		<object-name>frontdoor_right</object-name>
+		<object-name>frontdoorglas_right</object-name>
+		<object-name>winfr</object-name>
+		<object-name>fdoorintr</object-name>
+		<property>sim/model/bk117/door-positions/rightFrontDoor/position-norm</property>
+		<min-deg>-170</min-deg>
+		<factor>170</factor>
+		<center>
+			<x-m>-2.054145</x-m>
+			<y-m>0.782428</y-m>
+			<z-m>0.253845</z-m>
+		</center>
+		<axis>
+			<x>0.076331</x>
+			<y>-0.013922</y>
+			<z>0.168474</z>
+		</axis>
+	</animation>
+<animation>
+   <type>pick</type>
+  <object-name>frontdoor_left</object-name>
+  <object-name>fdoorintl</object-name>
+   <visible>true</visible>
+   <action>
+     <button>0</button>
+     <repeatable>false</repeatable>
+     <binding>
+        <command>nasal</command>
+        <script>bk117.leftFrontDoor.toggle();</script>
+     </binding>
+   </action>
+ </animation>
+
+<animation>
+		<type>rotate</type>
+		<object-name>frontdoor_left</object-name>
+		<object-name>frontdoorglas_left</object-name>
+		<object-name>winfl</object-name>
+		<object-name>fdoorintl</object-name>
+		<property>sim/model/bk117/door-positions/leftFrontDoor/position-norm</property>
+		<min-deg>-170</min-deg>
+		<factor>-170</factor>
+		<center>
+			<x-m>-2.054145</x-m>
+			<y-m>-0.782428</y-m>
+			<z-m>0.253845</z-m>
+		</center>
+		<axis>
+			<x>0.076331</x>
+			<y>0.013922</y>
+			<z>0.168474</z>
+		</axis>
+	</animation>
+	
+	
 
 <!--== rotor material ==-->
 

@@ -1461,6 +1461,84 @@
 		</axis>
 	</animation>
 	
+<animation>
+   <type>pick</type>
+  <object-name>backdoor_right</object-name>
+  <object-name>bdoorintr</object-name>
+   <visible>true</visible>
+   <action>
+     <button>0</button>
+     <repeatable>false</repeatable>
+     <binding>
+        <command>nasal</command>
+        <script>bk117.rightBackDoor.toggle();</script>
+     </binding>
+   </action>
+ </animation>
+
+<animation>
+		<type>translate</type>
+		<object-name>backdoor_right</object-name>
+                    <object-name>bdoorintr</object-name>
+		<object-name>backdoorglas_right</object-name>
+		<object-name>winbr</object-name>
+		<property>sim/model/bk117/door-positions/rightBackDoor/position-norm</property>
+		<interpolation>
+			<entry>
+				<ind>0</ind>
+				<dep>0</dep>
+			</entry>
+			<entry>
+				<ind>1</ind>
+				<dep>.75</dep>
+			</entry>
+		</interpolation>
+		<axis>
+			<x>1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+	</animation>
+
+<animation>
+   <type>pick</type>
+  <object-name>backdoor_left</object-name>
+  <object-name>bdoorintl</object-name>
+   <visible>true</visible>
+   <action>
+     <button>0</button>
+     <repeatable>false</repeatable>
+     <binding>
+        <command>nasal</command>
+        <script>bk117.leftBackDoor.toggle();</script>
+     </binding>
+   </action>
+ </animation>
+
+<animation>
+		<type>translate</type>
+		<object-name>backdoor_left</object-name>
+                    <object-name>bdoorintl</object-name>
+		<object-name>backdoorglas_left</object-name>
+		<object-name>winbl</object-name>
+		<property>sim/model/bk117/door-positions/leftBackDoor/position-norm</property>
+		<interpolation>
+			<entry>
+				<ind>0</ind>
+				<dep>0</dep>
+			</entry>
+			<entry>
+				<ind>1</ind>
+				<dep>.75</dep>
+			</entry>
+		</interpolation>
+		<axis>
+			<x>1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+	</animation>
+
 	
 
 <!--== rotor material ==-->

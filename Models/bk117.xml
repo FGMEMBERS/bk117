@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 
-<!-- Eurocopter EC 130 Helicopter by Heiko Schulz, animation set -->
+<!--MBB BK117 Helicopter by Heiko Schulz, animation set -->
 
 <PropertyList>
 
@@ -11,6 +11,18 @@
 		<z-m>-0.3</z-m>
 		<pitch-deg>0.2</pitch-deg>
 	</offsets>
+	
+  <nasal>
+        <load>
+            var livery_update = aircraft.livery_update.new(
+	    "Aircraft/bk117/Models/liveries", 5,
+	    func { print("bk117 livery update") });
+        </load>
+
+        <unload>
+            livery_update.stop();
+        </unload>
+    </nasal>
 	
 <!--shader-->
 <effect>
@@ -1702,7 +1714,15 @@
 		<max>1</max>
 	</animation>
 	
-
+<model>
+    <name>interior</name>
+    <path>Aircraft/bk117/Models/Interior/interior.xml</path>
+    <offsets>
+      <x-m> 0.0 </x-m>
+      <y-m> 0.0 </y-m>
+      <z-m> 0.0 </z-m>
+    </offsets>
+  </model>	
 	
 	
 <!--select animation-->

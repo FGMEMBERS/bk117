@@ -45,11 +45,9 @@ EC 135 simulation config.
 
 		<model>
 			<path archive="y">Aircraft/bk117/Models/bk117.xml</path>
-			<variant type="int">0</variant>
 			<livery>
                               <file type="string">FlightGear</file>
-			<index type="int">1</index>
-                            </livery>
+			</livery>
 	   
 	    		<bk117>
 				<hide-gsdi>true</hide-gsdi>
@@ -104,10 +102,10 @@ EC 135 simulation config.
 			<internal type="bool">true</internal>
 			<config>
                                         <x-offset-m type="double">0.43</x-offset-m><!--left-->
-				<y-offset-m type="double">0.37</y-offset-m><!--up-->
+				<y-offset-m type="double">0.25</y-offset-m><!--up-->
 				<z-offset-m type="double">0.86</z-offset-m><!--back-->
 				<pitch-offset-deg>-14</pitch-offset-deg>
-				<default-field-of-view-deg type="double">55.0</default-field-of-view-deg>
+				<default-field-of-view-deg type="double">60.0</default-field-of-view-deg>
 			</config>
 		</view>
 

@@ -26,7 +26,7 @@
 	
 <!--shader-->
 <effect>
-		<inherits-from>Aircraft/bk117/Models/Effects/bk117reflect</inherits-from>
+		<inherits-from>Aircraft/bk117/Models/Effects/bk117reflect-uber</inherits-from>
 		<object-name>fuselage</object-name>
 		<object-name>frontdoor_right</object-name>
 		<object-name>frontdoor_left</object-name>
@@ -48,8 +48,8 @@
 		<object-name>nacaintake</object-name>
 </effect>
 
-<effect>
-		<inherits-from>Aircraft/bk117/Models/Effects/bk117reflectglas</inherits-from>
+-<effect>
+		<inherits-from>Aircraft/bk117/Models/Effects/bk117reflectglas-uber</inherits-from>
 		<object-name>frontdoorglas_left</object-name>
 		<object-name>frontdoorglas_right</object-name>
 		<object-name>window</object-name>
@@ -1907,9 +1907,8 @@
 
 
 
-<animation>
+<!--<animation>
 		<type>material</type>
-		<!--global type="bool">true</global-->
 		<object-name>fuselage</object-name>
 		<object-name>nose</object-name>
 		<object-name>reardoor_right</object-name>
@@ -1945,7 +1944,7 @@
 			<green-prop>specular/green</green-prop>
 			<blue-prop>specular/blue</blue-prop>
 		</specular>
-</animation>
+</animation>-->
 
 
 </PropertyList>

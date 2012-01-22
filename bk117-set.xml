@@ -22,6 +22,16 @@ EC 135 simulation config.
 			<splash-texture>Aircraft/bk117/splash.rgb</splash-texture>
 		</startup>-->
 
+		<!-- ... 
+		<flight-recorder>
+			<replay-config type="int">0</replay-config>
+			<config n="0" include="/Aircraft/Generic/flightrecorder/generic-helicopter.xml">
+				<name type="string">My Aircraft's Flight Recorder</name>
+			</config>
+		</flight-recorder>-->
+		
+		<flight-recorder include="Systems/flight-recorder.xml"/>
+		
   <multiplay>
             <generic>
                 <int n="0" alias="/systems/electrical/outputs/beacon"/>
@@ -65,6 +75,7 @@ EC 135 simulation config.
 				<reardoor_left>true</reardoor_left>
 				<reardoor_wind_right>false</reardoor_wind_right>
 				<reardoor_wind_left>false</reardoor_wind_left>
+				<rotor-partcles>true</rotor-partcles>
 			<rotor>
 				 <texture>Rotor/white.png</texture>
 			</rotor>
@@ -200,22 +211,32 @@ EC 135 simulation config.
 
 		<menubar>
 			<default>
-				 <menu n="10">
-                                        <label>BK117</label>
-                                            <enabled type="bool">true</enabled>
-                                        <item>
-                                          <label>Select Livery</label>
-                                        <binding>
-                                          <command>nasal</command>
-                                          <script>aircraft.livery.dialog.toggle()</script>
-                                         </binding>
-                                         </item>
-				
-				<item>
+				<menu n="10">
+				<label>BK117</label>
+					<enabled type="bool">true</enabled>
+					<item>
+						<label>Select Livery</label>
+						<binding>
+							<command>nasal</command>
+							<script>aircraft.livery.dialog.toggle()</script>
+						</binding>
+					</item>
+					<item>
 						<label>Show/hide GSDI</label>
 						<binding>
 							<command>property-toggle</command>
 							<property>/sim/model/hide-gsdi</property>
+						</binding>
+					</item>
+					<item>
+						<label>Show/hide Rotor Particles</label>
+						<binding>
+							<command>nasal</command>
+							<script>
+							var p = "sim/model/rotor-partcles";
+							setprop(p, var i = !getprop(p));
+							gui.popupTip("Rotor Particles visible " ~ (i ? "Off" : "On"));
+							</script>
 						</binding>
 					</item>
 				</menu>

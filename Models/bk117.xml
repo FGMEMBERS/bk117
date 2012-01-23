@@ -48,7 +48,7 @@
 		<object-name>nacaintake</object-name>
 </effect>
 
--<effect>
+<effect>
 		<inherits-from>Aircraft/bk117/Models/Effects/bk117reflectglas-uber</inherits-from>
 		<object-name>frontdoorglas_left</object-name>
 		<object-name>frontdoorglas_right</object-name>

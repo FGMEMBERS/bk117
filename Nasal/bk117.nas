@@ -595,7 +595,7 @@ torque.setDoubleValue(0);
 var update_torque = func(dt) {
 	var f = dt / (0.2 + dt);
 	torque_val = torque.getValue() * f + torque_val * (1 - f);
-	torque_pct.setDoubleValue(torque_val / 5300);
+	torque_pct.setDoubleValue(torque_val / 6700);
 }
 
 

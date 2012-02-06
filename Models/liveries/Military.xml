@@ -29,6 +29,20 @@
                                <rotor>
 				 <texture>black.png</texture>
 			</rotor>
+			<material>
+			<fuselage>
+						<diffuse>
+							<red>0.8</red>
+							<green>0.8</green>
+							<blue>0.8</blue>
+						</diffuse>
+ 					         <specular>
+							<red>0.2</red>
+							<green>0.2</green>
+							<blue>0.2</blue>
+						</specular>
+				</fuselage>
+                               </material>
 			</bk117>
 		 </model>
 	  <rendering>

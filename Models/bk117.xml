@@ -1907,7 +1907,7 @@
 
 
 
-<!--<animation>
+<animation>
 		<type>material</type>
 		<object-name>fuselage</object-name>
 		<object-name>nose</object-name>
@@ -1944,7 +1944,7 @@
 			<green-prop>specular/green</green-prop>
 			<blue-prop>specular/blue</blue-prop>
 		</specular>
-</animation>-->
+</animation>
 
 
 

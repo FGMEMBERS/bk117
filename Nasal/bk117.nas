@@ -212,10 +212,10 @@ var Engine = {
 	update: func(dt, trim = 0) {
 		var starter = me.starterLP.filter(me.starterN.getValue() * 0.19);	# starter 15-20% N1max
 		me.powerN.setValue(me.power = clamp(me.powerN.getValue()));
-		var power = me.power * 0.97 + trim;					# 97% = N2% in flight position
+		var power = me.power * 1.00 + trim;					# 100% = N2% in flight position
 
 		if (me.running)
-			power += (1 - collective.getValue()) * 0.03;			# droop compensator
+			power += (1 - collective.getValue()) * 0.00;			# droop compensator
 		if (power > 1.12)
 			power = 1.12;							# overspeed restrictor
 
@@ -595,7 +595,7 @@ torque.setDoubleValue(0);
 var update_torque = func(dt) {
 	var f = dt / (0.2 + dt);
 	torque_val = torque.getValue() * f + torque_val * (1 - f);
-	torque_pct.setDoubleValue(torque_val / 6700);
+	torque_pct.setDoubleValue(torque_val / 7700);
 }
 
 

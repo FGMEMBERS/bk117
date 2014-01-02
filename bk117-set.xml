@@ -91,6 +91,11 @@ EC 135 simulation config.
 							<green>1.0</green>
 							<blue>1.0</blue>
 						</specular>
+						<ambient>
+							<red>1.0</red>
+							<green>1.0</green>
+							<blue>1.0</blue>
+						</ambient>
 				</fuselage>
                                </material>
 			</bk117>
@@ -299,6 +304,15 @@ EC 135 simulation config.
 
 	<input>
 		<keyboard>
+		
+	<key n="100">
+	<name>d</name>
+	<desc>Set collective to zero</desc>
+		<binding>
+						<command>nasal</command>
+						<script>interpolate("/controls/engines/engine/throttle", 1.0, 1.25)</script>
+		</binding>
+	</key>
 		
 		
 		

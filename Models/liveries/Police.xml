@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+	<sim>
+		<model>
+				<livery>
+					<name type="string">Police</name>
+					 <index type="int">1</index>
+					  <texture>POLICE.dds</texture>
+				</livery>
+				<bk117>
+				<hide-gsdi>true</hide-gsdi>
+				<sandfilter type="bool">false</sandfilter>
+				<radom type="bool">true</radom>
+				<winch>false</winch>
+				<searchlight_front>false</searchlight_front>
+				<wirecutter>false</wirecutter>
+				<searchlight_left>true</searchlight_left>
+				<FLIR>true</FLIR>
+				<skid_floats>false</skid_floats>
+				<skid>true</skid>
+				<snowboard>false</snowboard>
+				<reardoor_right>true</reardoor_right>
+				<reardoor_left>false</reardoor_left>
+				<reardoor_wind_right>false</reardoor_wind_right>
+				<reardoor_wind_left>true</reardoor_wind_left>
+			
+			
+			<rotor>
+				 <texture>orange.png</texture>
+			</rotor>
+			<material>
+			<fuselage>
+						<diffuse>
+							<red>1.0</red>
+							<green>1.0</green>
+							<blue>1.0</blue>
+						</diffuse>
+ 					         <specular>
+							<red>1.0</red>
+							<green>1.0</green>
+							<blue>1.0</blue>
+						</specular>
+				</fuselage>
+                               </material>
+			</bk117>
+			</model>
+	  <rendering>
+    <refl_correction type="string">-0.05</refl_correction>
+    </rendering>
+	</sim>
+</PropertyList>

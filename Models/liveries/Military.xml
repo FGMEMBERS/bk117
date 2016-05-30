@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+	<sim>
+		<model>
+				<livery>
+					<name type="string">Military</name>
+					 <index type="int">1</index>
+					  <texture>MILITARY.dds</texture>
+				</livery>
+				<bk117>
+				<hide-gsdi>true</hide-gsdi>
+				<sandfilter type="bool">true</sandfilter>
+				<radom type="bool">false</radom>
+				<winch>true</winch>
+				<searchlight_front>false</searchlight_front>
+				<wirecutter>true</wirecutter>
+				<searchlight_left>false</searchlight_left>
+				<FLIR>false</FLIR>
+				<skid_floats>true</skid_floats>
+				<skid>false</skid>
+				<snowboard>false</snowboard>
+				<reardoor_right>false</reardoor_right>
+				<reardoor_left>false</reardoor_left>
+				<reardoor_wind_right>true</reardoor_wind_right>
+				<reardoor_wind_left>true</reardoor_wind_left>
+			
+			
+                               <rotor>
+				 <texture>black.png</texture>
+			</rotor>
+			<material>
+			<fuselage>
+						<diffuse>
+							<red>0.8</red>
+							<green>0.8</green>
+							<blue>0.8</blue>
+						</diffuse>
+ 					         <specular>
+							<red>0.2</red>
+							<green>0.2</green>
+							<blue>0.2</blue>
+						</specular>
+				</fuselage>
+                               </material>
+			</bk117>
+		 </model>
+	  <rendering>
+    <refl_correction type="string">-0.5</refl_correction>
+    </rendering>
+	</sim>
+</PropertyList>
